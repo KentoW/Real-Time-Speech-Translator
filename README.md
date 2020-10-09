@@ -20,7 +20,7 @@
     - PyAudio==0.2.11
     - pymongo==3.9.0
     - six==1.15.0
-    - google-api-python-client== (pip でインスコ)
+    - google-api-python-client (pip でインスコ)
     - google-cloud-speech==1.3.2 (pip でインスコ、最新版はバージョンが2になったので注意)
     - tornado==6.0.4
     - sentok==1.3.1 (pip でインスコ)
