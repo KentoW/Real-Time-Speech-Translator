@@ -17,7 +17,7 @@
     - 適当にMongoDB用のディレクトリを作ってデータベース・サーバーを起動する（後述）
 - Python3.8~ 
     - パッケージ(特に断りの無い場合condaでインストール)
-    - PyAudio=0.2.11
+    - PyAudio==0.2.11
     - pymongo==3.9.0
     - six==1.15.0
     - google-api-python-client== (pip でインスコ)
@@ -58,10 +58,10 @@
     - 適当なディレクトリを作成 `mkdir -p data/db`
     - DBの起動 `mongod -d data/db`
 2. 音声認識サーバーの起動
-    - 認証キーの読み込み、シェル上に入力（もしくはシェル設定ファイルに入力） `export GOOGLE_APPLICATION_CREDENTIALS=hogehoge-hugahuga.json` 
+    - 認証キーの読み込み、シェル上に入力（もしくはシェル設定ファイルに入力） `export GOOGLE_APPLICATION_CREDENTIALS=/full_path/hogehoge-hugahuga.json` 
     - サーバーの起動 `python sr_server.py`
 3. 翻訳サーバーの起動
-    - 認証キーの読み込み、シェル上に入力（もしくはシェル設定ファイルに入力） `export GOOGLE_APPLICATION_CREDENTIALS=piyopiyo-barbar.json` 
+    - 認証キーの読み込み、シェル上に入力（もしくはシェル設定ファイルに入力） `export GOOGLE_APPLICATION_CREDENTIALS=/full_path/piyopiyo-barbar.json` 
     - サーバーの起動 `python tt_server.py`
 4. Webサーバーの起動
     - `python web_server.py` を実行
